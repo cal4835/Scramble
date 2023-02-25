@@ -1,0 +1,48 @@
+Lab 12 Notes and TODO
+
+Notes (things for future engancements and other stuff): 
+
+- Work on Scrambler so that two arrays don't have to be intialized manually
+- Admin functionality to add words to the array may be useful
+	- Use GetString to put words into the array (queues to add/remove?)
+	- Check for a confirmation (Y/N)
+	- Word is added to the array
+	- This will only work if the scramblizer works too
+- Don't think I will have time to use LED's in the school year, implement better LED usage,
+  buttons, etc. on an external breadboard
+- Ask Melton if there is a way to better automate things
+
+TODO:
+- Finish initializing arrays
+- Implement the game aspects
+	- play a game
+	- timer (PIT)
+	- LED	(GPIO)
+- Test successful and unsuccessful scrambles
+
+
+Words:
+;Easy mode
+hello_normal		DCB		"hello",0
+hello_scramble		DCB		"olelh",0
+
+tiger_normal		DCB		"tiger",0
+tiger_scramble		DCB		"itreg",0
+
+;Medium mode
+matcha_normal		DCB		"matcha",0
+matcha_scramble		DCB		"athcam",0
+
+french_normal		DCB		"french",0
+french_scramble		DCB		"nhrfce",0
+
+;Hard mode
+accessory_normal 	DCB     "accessory",0
+accessory_scramble	DCB		"scoseayrc",0
+
+pistachio_normal 	DCB		"pistachio",0
+pistachio_scramble	DCB     "hpsoitica",0
+
+
+
+	

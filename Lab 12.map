@@ -1,0 +1,282 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    ex_12.o(MyCode) refers (Special) to exercise04.o(Exercise04) for DIVU
+    ex_12.o(MyCode) refers (Special) to exercise07_custom_io.o(Custom_IO_Ex07) for PutNumHex
+    ex_12.o(MyCode) refers (Special) to exercise07_qtest.o(Queue_Test) for QTest
+    ex_12.o(MyCode) refers to start.o(Start) for Startup
+    ex_12.o(MyCode) refers to exercise05.o(Exercise05) for Init_UART0_Polling
+    ex_12.o(MyCode) refers to exercise06.o(Exercise06) for PutNumU
+    ex_12.o(MyCode) refers to ex_12.o(MyData) for Normal_Array
+    ex_12.o(MyCode) refers to ex_12.o(MyConst) for welcome_prompt
+    ex_12.o(MyCode) refers to exercise07_circular_fifo_queue.o(Queue_Circular_FIFO) for Dequeue
+    ex_12.o(RESET) refers (Special) to exercise04.o(Exercise04) for DIVU
+    ex_12.o(RESET) refers (Special) to exercise07_custom_io.o(Custom_IO_Ex07) for PutNumHex
+    ex_12.o(RESET) refers (Special) to exercise07_qtest.o(Queue_Test) for QTest
+    ex_12.o(RESET) refers to start.o(.ARM.__at_0x1FFFFC00) for __initial_sp
+    ex_12.o(RESET) refers to ex_12.o(MyCode) for Reset_Handler
+    ex_12.o(RESET) refers to start.o(Start) for Dummy_Handler
+    ex_12.o(MyConst) refers (Special) to exercise04.o(Exercise04) for DIVU
+    ex_12.o(MyConst) refers (Special) to exercise07_custom_io.o(Custom_IO_Ex07) for PutNumHex
+    ex_12.o(MyConst) refers (Special) to exercise07_qtest.o(Queue_Test) for QTest
+    ex_12.o(MyData) refers (Special) to exercise04.o(Exercise04) for DIVU
+    ex_12.o(MyData) refers (Special) to exercise07_custom_io.o(Custom_IO_Ex07) for PutNumHex
+    ex_12.o(MyData) refers (Special) to exercise07_qtest.o(Queue_Test) for QTest
+    exercise06.o(Exercise06) refers to exercise05.o(Exercise05) for GetChar
+    exercise06.o(Exercise06) refers to exercise04.o(Exercise04) for DIVU
+    exercise07_custom_io.o(Custom_IO_Ex07) refers to exercise05.o(Exercise05) for PutChar
+    exercise07_custom_io.o(Custom_IO_Ex07) refers to exercise06.o(Exercise06) for PutNumU
+    exercise07_qtest.o(Queue_Test) refers to exercise07_circular_fifo_queue.o(Queue_Circular_FIFO) for InitQueue
+    exercise07_qtest.o(Queue_Test) refers to exercise06.o(Exercise06) for PutStringSB
+    exercise07_qtest.o(Queue_Test) refers to exercise05.o(Exercise05) for GetChar
+    exercise07_qtest.o(Queue_Test) refers to exercise07_custom_io.o(Custom_IO_Ex07) for PutNumHex
+    exercise07_qtest.o(Queue_Test) refers to exercise07_qtest.o(QTest_Data) for QBuffer
+    exercise07_qtest.o(Queue_Test) refers to exercise07_qtest.o(QTest_Const) for PromptStr
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  ex_12.o(RESET)
+    ..\Lab 9\Start.s                         0x00000000   Number         0  start.o ABSOLUTE
+    Ex_12.s                                  0x00000000   Number         0  ex_12.o ABSOLUTE
+    Exercise04.s                             0x00000000   Number         0  exercise04.o ABSOLUTE
+    Exercise05.s                             0x00000000   Number         0  exercise05.o ABSOLUTE
+    Exercise06.s                             0x00000000   Number         0  exercise06.o ABSOLUTE
+    Exercise07_Circular_FIFO_Queue.s         0x00000000   Number         0  exercise07_circular_fifo_queue.o ABSOLUTE
+    Exercise07_Custom_IO.s                   0x00000000   Number         0  exercise07_custom_io.o ABSOLUTE
+    Exercise07_QTest.s                       0x00000000   Number         0  exercise07_qtest.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    .ARM.__at_0xC0                           0x000000c0   Section       64  start.o(.ARM.__at_0xC0)
+    Custom_IO_Ex07                           0x00000100   Section       48  exercise07_custom_io.o(Custom_IO_Ex07)
+    Exercise04                               0x00000130   Section       98  exercise04.o(Exercise04)
+    Exercise05                               0x00000194   Section      192  exercise05.o(Exercise05)
+    Exercise06                               0x00000254   Section      202  exercise06.o(Exercise06)
+    Queue_Circular_FIFO                      0x00000320   Section       92  exercise07_circular_fifo_queue.o(Queue_Circular_FIFO)
+    .ARM.__at_0x400                          0x00000400   Section       16  start.o(.ARM.__at_0x400)
+    MyCode                                   0x00000410   Section     1948  ex_12.o(MyCode)
+    Init_Array                               0x000005c9   Thumb Code    64  ex_12.o(MyCode)
+    Init_LED                                 0x00000639   Thumb Code    34  ex_12.o(MyCode)
+    All_Off                                  0x0000065b   Thumb Code    18  ex_12.o(MyCode)
+    Red_On                                   0x0000066d   Thumb Code    10  ex_12.o(MyCode)
+    Green_On                                 0x00000677   Thumb Code    10  ex_12.o(MyCode)
+    Blue_On                                  0x00000681   Thumb Code    10  ex_12.o(MyCode)
+    Toggle_Green                             0x0000068b   Thumb Code    10  ex_12.o(MyCode)
+    Toggle_Red                               0x00000695   Thumb Code    10  ex_12.o(MyCode)
+    Play_Game                                0x000006c1   Thumb Code   460  ex_12.o(MyCode)
+    Comparator                               0x0000088d   Thumb Code    72  ex_12.o(MyCode)
+    UART0_ISR                                0x000008d5   Thumb Code    58  ex_12.o(MyCode)
+    PIT_ISR                                  0x0000090f   Thumb Code    30  ex_12.o(MyCode)
+    Line_enter                               0x0000092d   Thumb Code    16  ex_12.o(MyCode)
+    Init_PIT_IRQ                             0x00000953   Thumb Code    62  ex_12.o(MyCode)
+    Init_UART0_IRQ                           0x00000991   Thumb Code   152  ex_12.o(MyCode)
+    PutStringSB                              0x00000a29   Thumb Code    32  ex_12.o(MyCode)
+    GetStringSB                              0x00000a49   Thumb Code    50  ex_12.o(MyCode)
+    Queue_Test                               0x00000bac   Section      368  exercise07_qtest.o(Queue_Test)
+    PutCRLF                                  0x00000cd9   Thumb Code    16  exercise07_qtest.o(Queue_Test)
+    Start                                    0x00000d1c   Section      200  start.o(Start)
+    SystemInit                               0x00000d2b   Thumb Code    54  start.o(Start)
+    SetClock48MHz                            0x00000d61   Thumb Code    82  start.o(Start)
+    MyConst                                  0x00000de4   Section      956  ex_12.o(MyConst)
+    welcome_prompt                           0x00000de4   Data          24  ex_12.o(MyConst)
+    help_prompt                              0x00000dfc   Data          81  ex_12.o(MyConst)
+    directions_prompt_p1                     0x00000e4d   Data          54  ex_12.o(MyConst)
+    directions_prompt_p2                     0x00000e83   Data         108  ex_12.o(MyConst)
+    directions_prompt_p3                     0x00000eef   Data         119  ex_12.o(MyConst)
+    good_luck                                0x00000f66   Data          11  ex_12.o(MyConst)
+    dashed_lines                             0x00000f71   Data          76  ex_12.o(MyConst)
+    Start_question                           0x00000fbd   Data          49  ex_12.o(MyConst)
+    goodbye                                  0x00000fee   Data          23  ex_12.o(MyConst)
+    invalid_character                        0x00001005   Data          32  ex_12.o(MyConst)
+    round_one                                0x00001042   Data          14  ex_12.o(MyConst)
+    round_two                                0x00001050   Data          16  ex_12.o(MyConst)
+    round_three                              0x00001060   Data          14  ex_12.o(MyConst)
+    correct                                  0x0000106e   Data           9  ex_12.o(MyConst)
+    incorrect                                0x00001077   Data           9  ex_12.o(MyConst)
+    end_game                                 0x000010cb   Data          76  ex_12.o(MyConst)
+    time                                     0x00001117   Data          13  ex_12.o(MyConst)
+    seconds                                  0x00001124   Data          14  ex_12.o(MyConst)
+    hello_normal                             0x00001132   Data           6  ex_12.o(MyConst)
+    hello_scramble                           0x00001138   Data           6  ex_12.o(MyConst)
+    tiger_normal                             0x00001140   Data           6  ex_12.o(MyConst)
+    tiger_scramble                           0x00001148   Data           6  ex_12.o(MyConst)
+    matcha_normal                            0x00001150   Data           7  ex_12.o(MyConst)
+    matcha_scramble                          0x00001158   Data           7  ex_12.o(MyConst)
+    french_normal                            0x00001160   Data           7  ex_12.o(MyConst)
+    french_scramble                          0x00001168   Data           7  ex_12.o(MyConst)
+    accessory_normal                         0x00001170   Data          10  ex_12.o(MyConst)
+    accessory_scramble                       0x0000117c   Data          10  ex_12.o(MyConst)
+    pistachio_normal                         0x00001188   Data          10  ex_12.o(MyConst)
+    pistachio_scramble                       0x00001194   Data          10  ex_12.o(MyConst)
+    QTest_Const                              0x000011a0   Section      176  exercise07_qtest.o(QTest_Const)
+    HelpStr                                  0x000011a0   Data          46  exercise07_qtest.o(QTest_Const)
+    EnqueueStr                               0x000011db   Data          22  exercise07_qtest.o(QTest_Const)
+    DequeueStr                               0x000011f1   Data           8  exercise07_qtest.o(QTest_Const)
+    FailureStr                               0x000011f9   Data           9  exercise07_qtest.o(QTest_Const)
+    InPtrStr                                 0x00001202   Data           8  exercise07_qtest.o(QTest_Const)
+    NumEnqdStr                               0x0000120a   Data           7  exercise07_qtest.o(QTest_Const)
+    OutPtrStr                                0x00001211   Data           9  exercise07_qtest.o(QTest_Const)
+    PromptStr                                0x0000121a   Data          34  exercise07_qtest.o(QTest_Const)
+    StatusStr                                0x0000123c   Data           9  exercise07_qtest.o(QTest_Const)
+    SuccessStr                               0x00001245   Data           9  exercise07_qtest.o(QTest_Const)
+    .ARM.__at_0x1FFFFC00                     0x1ffffc00   Section      256  start.o(.ARM.__at_0x1FFFFC00)
+    MyData                                   0x1ffffd00   Section      416  ex_12.o(MyData)
+    Normal_Array                             0x1ffffd00   Data          60  ex_12.o(MyData)
+    Scramble_Array                           0x1ffffd3c   Data          60  ex_12.o(MyData)
+    GAME_BUFFER                              0x1ffffd78   Data           4  ex_12.o(MyData)
+    GAMES_PASSED                             0x1ffffd7c   Data           4  ex_12.o(MyData)
+    STRING                                   0x1ffffd80   Data          79  ex_12.o(MyData)
+    StopWatch                                0x1ffffdd0   Data           1  ex_12.o(MyData)
+    Count                                    0x1ffffdd4   Data           4  ex_12.o(MyData)
+    RxBuffer                                 0x1ffffdd8   Data          80  ex_12.o(MyData)
+    RxRecord                                 0x1ffffe28   Data          18  ex_12.o(MyData)
+    TxBuffer                                 0x1ffffe3c   Data          80  ex_12.o(MyData)
+    TxRecord                                 0x1ffffe8c   Data          18  ex_12.o(MyData)
+    QTest_Data                               0x1ffffea0   Section       24  exercise07_qtest.o(QTest_Data)
+    QBuffer                                  0x1ffffea0   Data           4  exercise07_qtest.o(QTest_Data)
+    QRecord                                  0x1ffffea4   Data          18  exercise07_qtest.o(QTest_Data)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  ex_12.o(RESET)
+    __Vectors_End                            0x000000c0   Data           0  ex_12.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  ex_12.o ABSOLUTE
+    PutNumHex                                0x00000101   Thumb Code    34  exercise07_custom_io.o(Custom_IO_Ex07)
+    PutNumUB                                 0x00000123   Thumb Code    12  exercise07_custom_io.o(Custom_IO_Ex07)
+    DIVU                                     0x00000131   Thumb Code    98  exercise04.o(Exercise04)
+    GetChar                                  0x00000195   Thumb Code    20  exercise05.o(Exercise05)
+    Init_UART0_Polling                       0x000001a9   Thumb Code   108  exercise05.o(Exercise05)
+    PutChar                                  0x00000215   Thumb Code    16  exercise05.o(Exercise05)
+    GetStringSB                              0x00000255   Thumb Code   122  exercise06.o(Exercise06)
+    PutNumU                                  0x000002cf   Thumb Code    54  exercise06.o(Exercise06)
+    PutStringSB                              0x00000305   Thumb Code    26  exercise06.o(Exercise06)
+    Dequeue                                  0x00000321   Thumb Code    34  exercise07_circular_fifo_queue.o(Queue_Circular_FIFO)
+    Enqueue                                  0x00000343   Thumb Code    36  exercise07_circular_fifo_queue.o(Queue_Circular_FIFO)
+    InitQueue                                0x00000367   Thumb Code    22  exercise07_circular_fifo_queue.o(Queue_Circular_FIFO)
+    Reset_Handler                            0x00000411   Thumb Code   440  ex_12.o(MyCode)
+    QTest                                    0x00000bad   Thumb Code   300  exercise07_qtest.o(Queue_Test)
+    Startup                                  0x00000d1d   Thumb Code    14  start.o(Start)
+    Dummy_Handler                            0x00000db5   Thumb Code     2  start.o(Start)
+    HardFault_Handler                        0x00000db5   Thumb Code     0  start.o(Start)
+    __initial_sp                             0x1ffffd00   Data           0  start.o(.ARM.__at_0x1FFFFC00)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001508, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001250, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            2    RESET               ex_12.o
+    0x000000c0   0x000000c0   0x00000040   Data   RO           11    .ARM.__at_0xC0      start.o
+    0x00000100   0x00000100   0x00000030   Code   RO           27    Custom_IO_Ex07      Exercise07_Custom_IO.lib(exercise07_custom_io.o)
+    0x00000130   0x00000130   0x00000062   Code   RO           19    Exercise04          DIVU.lib(exercise04.o)
+    0x00000192   0x00000192   0x00000002   PAD
+    0x00000194   0x00000194   0x000000c0   Code   RO           21    Exercise05          Exercise05.lib(exercise05.o)
+    0x00000254   0x00000254   0x000000ca   Code   RO           23    Exercise06          Exercise06.lib(exercise06.o)
+    0x0000031e   0x0000031e   0x00000002   PAD
+    0x00000320   0x00000320   0x0000005c   Code   RO           25    Queue_Circular_FIFO  Exercise07_Circular_FIFO_Queue.lib(exercise07_circular_fifo_queue.o)
+    0x0000037c   0x0000037c   0x00000084   PAD
+    0x00000400   0x00000400   0x00000010   Code   RO           12    .ARM.__at_0x400     start.o
+    0x00000410   0x00000410   0x0000079c   Code   RO            1  * MyCode              ex_12.o
+    0x00000bac   0x00000bac   0x00000170   Code   RO           29    Queue_Test          Exercise07_QTest.lib(exercise07_qtest.o)
+    0x00000d1c   0x00000d1c   0x000000c8   Code   RO           10    Start               start.o
+    0x00000de4   0x00000de4   0x000003bc   Data   RO            3    MyConst             ex_12.o
+    0x000011a0   0x000011a0   0x000000b0   Data   RO           30    QTest_Const         Exercise07_QTest.lib(exercise07_qtest.o)
+
+
+    Execution Region ER_RW (Exec base: 0x1ffffc00, Load base: 0x00001250, Size: 0x000002b8, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1ffffc00   0x00001250   0x00000100   Data   RW           13    .ARM.__at_0x1FFFFC00  start.o
+    0x1ffffd00   0x00001350   0x000001a0   Data   RW            4    MyData              ex_12.o
+    0x1ffffea0   0x000014f0   0x00000018   Data   RW           31    QTest_Data          Exercise07_QTest.lib(exercise07_qtest.o)
+
+
+    Execution Region ER_ZI (Exec base: 0x1ffffeb8, Load base: 0x00001508, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1948        496       1148        416          0       1772   ex_12.o
+       216         64         64        256          0        800   start.o
+
+    ----------------------------------------------------------------------
+      2164        560       1212        672          0       2572   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        98          0          0          0          0         68   exercise04.o
+       192         48          0          0          0        152   exercise05.o
+       202          0          0          0          0        100   exercise06.o
+        92          0          0          0          0        152   exercise07_circular_fifo_queue.o
+        48          2          0          0          0         84   exercise07_custom_io.o
+       368         52        176         24          0        136   exercise07_qtest.o
+
+    ----------------------------------------------------------------------
+      1136        102        176         24          0        692   Library Totals
+       136          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        98          0          0          0          0         68   DIVU.lib
+       192         48          0          0          0        152   Exercise05.lib
+       202          0          0          0          0        100   Exercise06.lib
+        92          0          0          0          0        152   Exercise07_Circular_FIFO_Queue.lib
+        48          2          0          0          0         84   Exercise07_Custom_IO.lib
+       368         52        176         24          0        136   Exercise07_QTest.lib
+
+    ----------------------------------------------------------------------
+      1136        102        176         24          0        692   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3300        662       1388        696          0       2848   Grand Totals
+      3300        662       1388        696          0       2848   ELF Image Totals
+      3300        662       1388        696          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 4688 (   4.58kB)
+    Total RW  Size (RW Data + ZI Data)               696 (   0.68kB)
+    Total ROM Size (Code + RO Data + RW Data)       5384 (   5.26kB)
+
+==============================================================================
+
